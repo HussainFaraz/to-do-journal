@@ -13,9 +13,14 @@
 <p><b>Hi {{name}},</b></p>
 <p><b>Please find the task list:</b></p>
 <ol>
+{% if all_items|length != 0 %}
  {% for i in all_items %}
 <li> {{i}} </li>
  {% endfor %}
+    {% else %}
+
+ <li> {{"No records available"}}</li>
+   {%endif %}
  </ol>
  <p><b>Regards,<b> <br> <b>Faraz Hussain<b> <p>
 

@@ -61,6 +61,7 @@
 {% comment %} <th>Priority </th> {% endcomment %}
   <th>Delete? </th>
   </tr>
+  {% if all_items|length != 0 %}
   {% for task in all_items %}
   <tr>
   <td><b>{{task.task}}</b></td>
@@ -68,6 +69,13 @@
   <td><a href="{% url 'delete' task.id %}" ><b>Delete</b></a> </td>
   </tr>
   {% endfor %}
+    {% else %}
+<tr>
+  <td><b>{{"No records available"}}</b></td>
+  <td> </td>
+
+  </tr>
+  {%endif %}
   </table>
 </div>
 

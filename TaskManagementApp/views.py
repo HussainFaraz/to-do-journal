@@ -66,7 +66,6 @@ def email(request):
         message.content_subtype = 'html' # this is required because there is no plain text email message
         message.send()
         messages.success(request,('Email sent successfully!!'))
-        User.objects.all().delete()
         ToDoDB.objects.all().delete()
         return render(request,'index.html')
         
@@ -77,12 +76,10 @@ def email(request):
         message.content_subtype = 'html' # this is required because there is no plain text email message
         message.send()
         messages.success(request,('Email sent successfully!!'))
-        User.objects.all().delete()
         ToDoDB.objects.all().delete()
         return render(request,'index.html')
 
 def Logout(request):
-    User.objects.all().delete()
     ToDoDB.objects.all().delete() 
   
 
