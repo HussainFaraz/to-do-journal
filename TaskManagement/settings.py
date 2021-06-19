@@ -124,6 +124,7 @@ USE_TZ = True
 import os.path
 STATIC_URL = '/static/'
 STATICFILES_DIRS=(os.path.join('Static'),)
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
