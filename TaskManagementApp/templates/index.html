@@ -36,10 +36,10 @@
 </div> 
 
  {% if messages %}
- 
-  <h3> {{messages}}  </h3>
+ {% for message in messages%}
+  <h3> {{message}}  </h3>
 
- 
+ {% endfor %}
   {% endif %} 
 </div>
 
