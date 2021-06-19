@@ -1,0 +1,93 @@
+
+
+#index
+{
+  margin-top: 80%;
+  margin-left: 60%;
+}
+.home
+{
+  margin-top: 80%;
+  margin-left: 60%;
+}
+#id
+{
+    font-family: cursive;
+}
+
+#card {
+    margin-left: 198%;      
+ 
+    margin-top: -55%;
+    width: 80%;
+    align-self: center;
+}
+
+#header
+{
+    background-image: url('header.jpg');
+ 
+}
+
+ html {
+    height: 100%;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+body{
+    /* The image used */
+    
+    background-image: url('BG.jpg');
+  
+    /* Control the height of the image */
+    min-height: 300px;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+   
+    background-size: cover;
+    position: fixed;
+  }
+  
+  /* Add styles to the form container */
+  .container {
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    max-width: 300px;
+    padding: 16px;
+    background-color: white;
+  }
+  
+  /* Full-width input fields */
+    input[type=text], input[type=password] {
+    
+    
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+
+  
+.form1
+{
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.entertask
+{
+  margin-top: 50%;
+  margin-left: 60%;
+
+}
+
+#label
+{
+  font-size: large;
+}
+
+
