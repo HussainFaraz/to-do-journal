@@ -1,1 +1,1 @@
-web: waitress-serve --port=8000 TaskManagement.wsgi:application
+web: waitress-serve --port=$PORT TaskManagement.wsgi:application
